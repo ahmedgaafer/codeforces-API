@@ -22,6 +22,4 @@ app.get("/",function(req,res){
 });
 
 
-app.listen(8080,'localhost',function(){
-   console.log("The Codeforces App has Started !!"); 
-});
+app.listen(process.env.PORT, process.env.IP, () => console.log("The Codeforces App Server Has Started!"));
